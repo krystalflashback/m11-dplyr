@@ -19,7 +19,7 @@ car.1997 <- data.frame(vehicles$year == 1997)
 unique(car.1997$year)
 
 # Create a data.frame of 2-Wheel Drive vehicles that get more than 20 miles/gallon in the city
-more.than.20 <- data.frame[vehicles$drive == '2-Wheel Drive' && vehicles$cty > 20]
+more.than.20 <- data.frame[vehicles$drive == '2-Wheel Drive' & vehicles$cty > 20]
 
 # Of those vehicles, what is the vehicle ID of the vehicle with the worst hwy mpg?
 ID.worst.hwy <- more.than.20$id[more.than.20$hwy == min(more.than.20$hwy)]
